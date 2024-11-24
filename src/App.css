@@ -1,0 +1,171 @@
+.container {
+  border-radius: 5px;
+  width: 100vw;
+  height: 100vh;
+  background: #FFBC97;
+  position: relative;
+}
+
+.resizeable {
+  position: absolute;
+  border: 2px solid #533535;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.resizer {
+  position: absolute;
+  background: black;
+}
+
+.resizer-r {
+  cursor: col-resize;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 5px;
+}
+
+.resizer-t {
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.resizer-b {
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.resizer-l {
+  cursor: col-resize;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 5px;
+}
+.code-container{
+  display: flex;
+
+  background-color: #282C34FF;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.head{
+  background-color: rgb(68, 69, 71);
+  padding-top: 10px;
+  display: flex;
+  gap: 2px;
+  padding-left:10px ;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.t-dots{
+display: flex;
+/* align-self: self-end;
+ */
+ margin-left: auto;
+ margin-right: 20px;
+ gap:5px
+ 
+}
+.t-dots div{
+  width: 20px;
+  height: 20px;
+border-radius: 50%;
+
+}
+.red-dot{
+  background-color: red;
+}
+.yellow-dot{
+  background-color: yellow;
+}
+.green-dot{
+  background-color: green;
+}
+.plus-icon{
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  min-height: 30px;
+  min-width: 30px;
+  font-size: x-large;
+  /* margin-right: ; */
+  background-color: #393939;
+  color: white;
+  text-align: center;
+
+}
+.file-name{
+  background-color: #282C34FF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: wheat;
+  font-family:'Courier New', Courier, monospace;
+  padding-left: 5px;
+  padding-right: 20px;
+  max-width: fit-content;
+}
+.line-numbers{
+  flex-shrink: 0;
+  padding-top: 10px;
+  /* padding: 10px;
+  paddi
+  text-align: center;
+  color: rgb(255, 109, 109);
+  margin-right: 10px; */
+  -webkit-font-smoothing: antialiased; /* For WebKit-based browsers (Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* For macOS in Firefox */
+  /* margin-left: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.editor{
+  flex-grow: 8;
+  height: 100%;
+ padding-top:3px
+}
+@import url("/node_modules/prismjs/themes/prism.css");
+
+.token.property {
+  color: #353a44;
+}
+
+.token.boolean,
+.token.null.keyword {
+  color: #045ad0;
+}
+
+.token.number {
+  color: #b13600;
+}
+
+.token.string {
+  color: #217005;
+}
+
+.token.operator,
+.token.punctuation {
+  color: #6c7688;
+  background: none;
+}
+
+pre[class*="language-"] {
+  font-family: monospace;
+}
